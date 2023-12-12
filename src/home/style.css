@@ -1,0 +1,49 @@
+.pulse {
+  box-shadow: 0 0 0 rgba(247, 53, 39, 1);
+  animation: pulse 1.5s infinite;
+  will-change: transform;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(247, 53, 39, 1);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(247, 53, 39, 1);
+    box-shadow: 0 0 0 0 rgba(247, 53, 39, 1);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+/* .copyButton::before {
+  background: hsl(45 100% 70%) !important;
+  content: '';
+  inset: 0 !important;
+  position: absolute;
+  transform: scaleX(0) !important;
+  transform-origin: right !important;
+  transition: transform 0.5s ease-in-out !important;
+  z-index: -1 !important;
+}
+
+.copyButton:hover::before {
+  transform: scaleX(1) !important;
+  transform-origin: left !important;
+} */
